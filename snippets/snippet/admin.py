@@ -4,6 +4,4 @@ from snippet.models import Snippet
 # Register your models here.
 @admin.register(Snippet)
 class SettingAdmin(admin.ModelAdmin):
-    list_display = ('titel', 'code', 'languege', 'style')
-
-
+    list_display = ('id', 'titel', 'code', 'languege', 'style')

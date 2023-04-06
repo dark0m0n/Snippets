@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
-from snippet.views import snippet_list
+from snippet.views import snippet_list, snippet_detail
 
 urlpatterns = [
-    path('snippet/', snippet_list)
+    path('snippets/', snippet_list),
+    path('snippet/<int:pk>/', snippet_detail),
 ]
